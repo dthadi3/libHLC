@@ -2,7 +2,3 @@ language: c++
 arch:
   - amd64
   - ppc64le
-script:
-  - make install
-  - cmake <hlc_source> -DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON  -DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=HSAIL
-  - make -j
